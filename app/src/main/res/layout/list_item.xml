@@ -1,63 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    android:orientation="horizontal"
-    android:layout_width="match_parent"
+<LinearLayout android:orientation="vertical"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:clickable="true"
     android:focusable="true"
-    android:foreground="?selectableItemBackground">
+    android:gravity="center_horizontal"
+    android:foreground="?selectableItemBackground"
+    android:layout_marginEnd="16dp"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <FrameLayout
-        android:id="@+id/frameLayout"
+    <ImageView
+        android:src="@drawable/img"
+        android:id="@+id/imageViewService"
+        android:layout_width="56dp"
+        android:layout_marginTop="16dp"
+        android:layout_height="56dp" />
+
+    <TextView
+        android:id="@+id/textViewContact"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp">
-
-        <ImageView
-            android:src="@drawable/img"
-            android:id="@+id/imageViewService"
-            android:layout_width="56dp"
-            android:layout_height="56dp"
-            android:layout_gravity="top|start" />
-    </FrameLayout>
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginVertical="16dp">
-
-        <TextView
-            android:id="@+id/textViewTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textSize="16sp" />
-
-        <TextView
-            android:id="@+id/textViewBody"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="14sp"
-            android:layout_below="@id/textViewTitle"
-            android:textAlignment="textStart"
-            android:gravity="start"
-            android:ellipsize="end"
-            android:maxLines="1"
-            android:layout_marginTop="5dp" />
-
-        <!--<TextView
-            android:id="@+id/textViewSum"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:layout_below="@id/textViewTitle"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="5dp"
-            android:layout_marginStart="24dp" />-->
-
-    </LinearLayout>
+        tools:text="Colin"
+        android:textStyle="bold"
+        android:textSize="20sp" />
 
 </LinearLayout>
